@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+<hibernate-mapping>
+    <class name="hu.nl.hibernate.Employee" table="employee">
+
+        <meta attribute = "class-description">
+            This class contains the employee detail.
+        </meta>
+
+        <id name = "id" type = "int" column = "id">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstName" column="firstName" type="string"></property>
+        <property name="lastName" column="lastname" type="string"></property>
+        <property name="salary" column="salary" type="int"></property>
+
+    </class>
+
+</hibernate-mapping>
